@@ -33,11 +33,11 @@ To understand how to:
 
 ## ⚙️ Functions Overview
 
-### `deposit(uint256 amount)`
+#### `deposit(uint256 amount)`
 
 Adds balance to the caller’s own account.
 
-### `setAllowance(address spender, uint256 amount)`
+#### `setAllowance(address spender, uint256 amount)`
 
 Lets a user give another address permission to spend up to a certain amount from their balance.  
 Includes safety checks:
@@ -45,7 +45,7 @@ Includes safety checks:
 - Cannot give allowance to self.
 - Allowance cannot exceed current balance.
 
-### `spendFrom(address _owner, uint256 amount)`
+#### `spendFrom(address _owner, uint256 amount)`
 
 Allows a spender to spend part of the owner’s balance, if the owner gave them enough allowance.  
 Decreases both:
@@ -53,11 +53,11 @@ Decreases both:
 - The owner’s balance.
 - The spender’s remaining allowance.
 
-### `getBalance()`
+#### `getBalance()`
 
 Returns the caller’s current balance.
 
-### `getAllowance(address _owner, address spender)`
+#### `getAllowance(address _owner, address spender)`
 
 Returns how much the `spender` can spend from the `_owner`'s account.
 
